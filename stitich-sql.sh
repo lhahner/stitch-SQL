@@ -1,100 +1,47 @@
-# !/bin/bash
-# declares the tables to compare
-declare table_1=$1 
-declare table_2=$2
+#!/bin/bash
+set -e 
+# declare list for parameters sitich-sql -i fileA fileB fileC fileD -o path-oupt
+declare -a args=($*)
 
-# create file
-if [[ -f ./bins/"$table_1"-"$table_2".sql ]]; then
-    echo $(date) - File already exists.
-else
-    touch ./bins/"$table_1"-"$table_2".sql
+# declare argument counter
+declare -a argc=${#args[@]}
+
+# Display help information using --help
+print_help() {
+  cat << EOF 
+  sitich-sql is a derivived version of sititch-data which focuses on concat SQLs.
+  Options - Required:
+      - i : Specify input file path, e.g.: sitich-sql -i head.xml
+      - o : Specify ouput path, e.g.: sitich-sql -i head.xml -o ./bins/head-con.xml
+EOF
+exit 0;
+}
+
+# print the script name and all arguments to stderr
+yell() { 
+    echo "$0: $*" >&2; 
+}
+
+# does the same as yell, but exits with a non-0 exit status, which means “fail”.
+die() { 
+    yell "$*"; exit 111;
+}
+
+# uses the || (boolean OR), which only evaluates the right side if the left one failed. 
+try() { 
+  "$@" || die "cannot $*"; 
+}
+
+# print help and exit
+if [ "${args[0]}" = "--help" ] || [ "${args[0]}" = "-h" ] || [ "${args[0]}" = "--h" ]; then
+  print_help
 fi
 
-file_created=0
-while [[ file_created -eq 0 ]]
-do
-    # Append now basic structure
-    if [[ -f ./assets/excel-head.txt ]]; then
-        file_created=1
-        cat ./assets/excel-head.txt > ./bins/"$table_1"-"$table_2".sql
-    else
-        touch ./assets/excel-head.txt
-    fi
+for i in args
+do 
+  echo "$i"
 done
 
-# select table
-construct_select_keys="
-SELECT_KEYS AS (
-  SELECT
-    TC.CONSTNAME
-    , TC.TBCREATOR
-    , TC.TBNAME
-    , TC.TYPE
-    , KC.COLNAME
-    , KC.COLSEQ
-  FROM
-    SYSIBM.SYSTABCONST TC
-    INNER JOIN SYSIBM.SYSKEYCOLUSE KC
-  ON TC.CONSTNAME = KC.CONSTNAME
-  AND TC.TBNAME = KC.TBNAME
-  WHERE
-    TC.TBCREATOR IN ('PST', 'OKT')
-    AND TC.TBNAME IN ('"$table_1"', '"$table_2"')
-  ORDER BY
-    TC.TBNAME
-    , KC.COLSEQ
-),"
-# append to SQL file
-echo $construct_select_keys >> ./bins/"$table_1"-"$table_2".sql
+# option -i and -o have to be specfied
 
-# select muster
-construct_select_muster="
-SELECT_MUSTER AS (
-  SELECT
-    T.TBCREATOR
-    , T.TBNAME
-    , T.NAME
-    , T.COLTYPE
-    , T.LENGTH
-    , T.NULLS
-    , CASE
-      WHEN EXISTS (
-        SELECT
-          1
-        FROM
-          SELECT_KEYS SK
-        WHERE
-          T.TBCREATOR = SK.TBCREATOR
-          AND T.TBNAME = SK.TBNAME
-          AND T.NAME = SK.COLNAME
-      )
-      THEN 'PRIMKEY'
-      ELSE '-'
-    END AS KEY
-  FROM
-    SYSIBM.SYSCOLUMNS T
-  WHERE
-    T.TBCREATOR IN ('PST', 'OKT')
-    AND T.TBNAME IN ('"$table_1"', '"$table_2"')
-  ORDER BY
-    T.TBNAME
-    , T.NAME
-),"
-# append to SQL-file
-echo $construct_select_muster >> ./bins/"$table_1"-"$table_2".sql
 
-# Append now body with mapped sql statement structure
-if [[ -f ./assets/excel-body.txt ]]; then
-    cat ./assets/excel-body.txt >> ./bins/"$table_1"-"$table_2".sql
-else
-    touch ./assets/excel-body.txt
-    echo $(date) - Body file does not exist, created but filled not with content.
-fi
-
-# Append now footer with mapped sql statement structure
-if [[ -f ./assets/excel-footer.txt ]]; then
-    cat ./assets/excel-footer.txt >> ./bins/"$table_1"-"$table_2".sql
-else
-    touch ./assets/excel-footer.txt
-    echo $(date) - Footer file does not exist, created but filled not with content.
-fi
