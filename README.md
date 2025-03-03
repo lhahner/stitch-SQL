@@ -15,7 +15,7 @@ sql file.
 
 ### Options
 
-| Directory | Description                                 |
-| --------- | ------------------------------------------- |
-| `-o`      | Define the output file and the output path. |
-| `-v`      | Verbose mode will provide more information. |
+| Options   | Description                                      |
+| --------- | ---------------------------------------------- |
+| `-o`      | Define the output file and the output path.    |
+| `-i`      | Specfiy all the files that are taken as input. |
