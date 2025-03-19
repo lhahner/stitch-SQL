@@ -19,3 +19,7 @@ sql file.
 | --------- | ---------------------------------------------- |
 | `-o`      | Define the output file and the output path.    |
 | `-i`      | Specfiy all the files that are taken as input. |
+
+### Examples
+
+`stitich-sql -o ./bins/`
