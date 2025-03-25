@@ -72,3 +72,19 @@ The output will then be a parsed XML or JSON depending on the users prefrences:
 So the general next target is to hide any complexity and provide a program
 that will deal with the Macros and provide a more complex statement that
 whenever run against a DBMS will provide a semi-structured output.
+
+In SQLlite the SQL Statement is evaluated by tokenize the SQL text into tokens
+and hand those tokens one by one to the parser. The idea is therefore to only use a 
+tokenizer for macro consumption. 
+
+The follwing should be a basic concept for the mapping approach:
+
+````
+@Worksheet {
+    @Table(NAME) {
+        @Row {
+        SELECT @Cell NAME FROM EMPLOYEES WHERE AGE > 2;
+        }
+    }
+}
+````

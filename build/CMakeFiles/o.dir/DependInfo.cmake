@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/lennart.hahner/Documents/dev/stitch-data/src/main.c" "CMakeFiles/o.dir/src/main.c.o" "gcc" "CMakeFiles/o.dir/src/main.c.o.d"
+  "/Users/lennart.hahner/Documents/dev/stitch-SQL/src/main.c" "CMakeFiles/o.dir/src/main.c.o" "gcc" "CMakeFiles/o.dir/src/main.c.o.d"
+  "/Users/lennart.hahner/Documents/dev/stitch-SQL/src/test_tokenizer.c" "CMakeFiles/o.dir/src/test_tokenizer.c.o" "gcc" "CMakeFiles/o.dir/src/test_tokenizer.c.o.d"
+  "/Users/lennart.hahner/Documents/dev/stitch-SQL/src/tokenizer.c" "CMakeFiles/o.dir/src/tokenizer.c.o" "gcc" "CMakeFiles/o.dir/src/tokenizer.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

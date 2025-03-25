@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "./includes/sitich-sql.h"
 
 int main(int argc, char** args){
-    return 0;
+    test_stitichSQL_getToken();
 }
+

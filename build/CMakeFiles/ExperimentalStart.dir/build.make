@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lennart.hahner/Documents/dev/stitch-data
+CMAKE_SOURCE_DIR = /Users/lennart.hahner/Documents/dev/stitch-SQL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lennart.hahner/Documents/dev/stitch-data/build
+CMAKE_BINARY_DIR = /Users/lennart.hahner/Documents/dev/stitch-SQL/build
 
 # Utility rule file for ExperimentalStart.
 
@@ -85,6 +85,6 @@ CMakeFiles/ExperimentalStart.dir/clean:
 .PHONY : CMakeFiles/ExperimentalStart.dir/clean
 
 CMakeFiles/ExperimentalStart.dir/depend:
-	cd /Users/lennart.hahner/Documents/dev/stitch-data/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lennart.hahner/Documents/dev/stitch-data /Users/lennart.hahner/Documents/dev/stitch-data /Users/lennart.hahner/Documents/dev/stitch-data/build /Users/lennart.hahner/Documents/dev/stitch-data/build /Users/lennart.hahner/Documents/dev/stitch-data/build/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/lennart.hahner/Documents/dev/stitch-SQL/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lennart.hahner/Documents/dev/stitch-SQL /Users/lennart.hahner/Documents/dev/stitch-SQL /Users/lennart.hahner/Documents/dev/stitch-SQL/build /Users/lennart.hahner/Documents/dev/stitch-SQL/build /Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ExperimentalStart.dir/depend
 

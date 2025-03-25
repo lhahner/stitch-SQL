@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lennart.hahner/Documents/dev/stitch-data
+CMAKE_SOURCE_DIR = /Users/lennart.hahner/Documents/dev/stitch-SQL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lennart.hahner/Documents/dev/stitch-data/build
+CMAKE_BINARY_DIR = /Users/lennart.hahner/Documents/dev/stitch-SQL/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/o.dir/depend.make
@@ -73,30 +73,62 @@ CMakeFiles/o.dir/codegen:
 .PHONY : CMakeFiles/o.dir/codegen
 
 CMakeFiles/o.dir/src/main.c.o: CMakeFiles/o.dir/flags.make
-CMakeFiles/o.dir/src/main.c.o: /Users/lennart.hahner/Documents/dev/stitch-data/src/main.c
+CMakeFiles/o.dir/src/main.c.o: /Users/lennart.hahner/Documents/dev/stitch-SQL/src/main.c
 CMakeFiles/o.dir/src/main.c.o: CMakeFiles/o.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/o.dir/src/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/o.dir/src/main.c.o -MF CMakeFiles/o.dir/src/main.c.o.d -o CMakeFiles/o.dir/src/main.c.o -c /Users/lennart.hahner/Documents/dev/stitch-data/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/o.dir/src/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/o.dir/src/main.c.o -MF CMakeFiles/o.dir/src/main.c.o.d -o CMakeFiles/o.dir/src/main.c.o -c /Users/lennart.hahner/Documents/dev/stitch-SQL/src/main.c
 
 CMakeFiles/o.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/o.dir/src/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lennart.hahner/Documents/dev/stitch-data/src/main.c > CMakeFiles/o.dir/src/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lennart.hahner/Documents/dev/stitch-SQL/src/main.c > CMakeFiles/o.dir/src/main.c.i
 
 CMakeFiles/o.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/o.dir/src/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lennart.hahner/Documents/dev/stitch-data/src/main.c -o CMakeFiles/o.dir/src/main.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lennart.hahner/Documents/dev/stitch-SQL/src/main.c -o CMakeFiles/o.dir/src/main.c.s
+
+CMakeFiles/o.dir/src/test_tokenizer.c.o: CMakeFiles/o.dir/flags.make
+CMakeFiles/o.dir/src/test_tokenizer.c.o: /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test_tokenizer.c
+CMakeFiles/o.dir/src/test_tokenizer.c.o: CMakeFiles/o.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/o.dir/src/test_tokenizer.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/o.dir/src/test_tokenizer.c.o -MF CMakeFiles/o.dir/src/test_tokenizer.c.o.d -o CMakeFiles/o.dir/src/test_tokenizer.c.o -c /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test_tokenizer.c
+
+CMakeFiles/o.dir/src/test_tokenizer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/o.dir/src/test_tokenizer.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test_tokenizer.c > CMakeFiles/o.dir/src/test_tokenizer.c.i
+
+CMakeFiles/o.dir/src/test_tokenizer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/o.dir/src/test_tokenizer.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test_tokenizer.c -o CMakeFiles/o.dir/src/test_tokenizer.c.s
+
+CMakeFiles/o.dir/src/tokenizer.c.o: CMakeFiles/o.dir/flags.make
+CMakeFiles/o.dir/src/tokenizer.c.o: /Users/lennart.hahner/Documents/dev/stitch-SQL/src/tokenizer.c
+CMakeFiles/o.dir/src/tokenizer.c.o: CMakeFiles/o.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/o.dir/src/tokenizer.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/o.dir/src/tokenizer.c.o -MF CMakeFiles/o.dir/src/tokenizer.c.o.d -o CMakeFiles/o.dir/src/tokenizer.c.o -c /Users/lennart.hahner/Documents/dev/stitch-SQL/src/tokenizer.c
+
+CMakeFiles/o.dir/src/tokenizer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/o.dir/src/tokenizer.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lennart.hahner/Documents/dev/stitch-SQL/src/tokenizer.c > CMakeFiles/o.dir/src/tokenizer.c.i
+
+CMakeFiles/o.dir/src/tokenizer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/o.dir/src/tokenizer.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lennart.hahner/Documents/dev/stitch-SQL/src/tokenizer.c -o CMakeFiles/o.dir/src/tokenizer.c.s
 
 # Object files for target o
 o_OBJECTS = \
-"CMakeFiles/o.dir/src/main.c.o"
+"CMakeFiles/o.dir/src/main.c.o" \
+"CMakeFiles/o.dir/src/test_tokenizer.c.o" \
+"CMakeFiles/o.dir/src/tokenizer.c.o"
 
 # External object files for target o
 o_EXTERNAL_OBJECTS =
 
 o : CMakeFiles/o.dir/src/main.c.o
+o : CMakeFiles/o.dir/src/test_tokenizer.c.o
+o : CMakeFiles/o.dir/src/tokenizer.c.o
 o : CMakeFiles/o.dir/build.make
 o : CMakeFiles/o.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-data/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/o.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +140,6 @@ CMakeFiles/o.dir/clean:
 .PHONY : CMakeFiles/o.dir/clean
 
 CMakeFiles/o.dir/depend:
-	cd /Users/lennart.hahner/Documents/dev/stitch-data/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lennart.hahner/Documents/dev/stitch-data /Users/lennart.hahner/Documents/dev/stitch-data /Users/lennart.hahner/Documents/dev/stitch-data/build /Users/lennart.hahner/Documents/dev/stitch-data/build /Users/lennart.hahner/Documents/dev/stitch-data/build/CMakeFiles/o.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/lennart.hahner/Documents/dev/stitch-SQL/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lennart.hahner/Documents/dev/stitch-SQL /Users/lennart.hahner/Documents/dev/stitch-SQL /Users/lennart.hahner/Documents/dev/stitch-SQL/build /Users/lennart.hahner/Documents/dev/stitch-SQL/build /Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles/o.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/o.dir/depend
 

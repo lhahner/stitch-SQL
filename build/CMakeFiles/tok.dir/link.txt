@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/tok.dir/src/main.c.o CMakeFiles/tok.dir/src/test_tokenizer.c.o CMakeFiles/tok.dir/src/tokenizer.c.o -o tok

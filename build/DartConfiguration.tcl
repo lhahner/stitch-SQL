@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/lennart.hahner/Documents/dev/stitch-data
-BuildDirectory: /Users/lennart.hahner/Documents/dev/stitch-data/build
+SourceDirectory: /Users/lennart.hahner/Documents/dev/stitch-SQL
+BuildDirectory: /Users/lennart.hahner/Documents/dev/stitch-SQL/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/opt/homebrew/bin/cmake" "/Users/lennart.hahner/Documents/dev/stitch-data"
+ConfigureCommand: "/opt/homebrew/bin/cmake" "/Users/lennart.hahner/Documents/dev/stitch-SQL"
 MakeCommand: /opt/homebrew/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

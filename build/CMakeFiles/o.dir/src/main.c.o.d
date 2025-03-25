@@ -1,5 +1,6 @@
 CMakeFiles/o.dir/src/main.c.o: \
-  /Users/lennart.hahner/Documents/dev/stitch-data/src/main.c \
+  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/main.c \
+  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/./includes/sitich-sql.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \

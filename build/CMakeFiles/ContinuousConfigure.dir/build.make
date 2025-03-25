@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lennart.hahner/Documents/dev/stitch-data
+CMAKE_SOURCE_DIR = /Users/lennart.hahner/Documents/dev/stitch-SQL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lennart.hahner/Documents/dev/stitch-data/build
+CMAKE_BINARY_DIR = /Users/lennart.hahner/Documents/dev/stitch-SQL/build
 
 # Utility rule file for ContinuousConfigure.
 
@@ -85,6 +85,6 @@ CMakeFiles/ContinuousConfigure.dir/clean:
 .PHONY : CMakeFiles/ContinuousConfigure.dir/clean
 
 CMakeFiles/ContinuousConfigure.dir/depend:
-	cd /Users/lennart.hahner/Documents/dev/stitch-data/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lennart.hahner/Documents/dev/stitch-data /Users/lennart.hahner/Documents/dev/stitch-data /Users/lennart.hahner/Documents/dev/stitch-data/build /Users/lennart.hahner/Documents/dev/stitch-data/build /Users/lennart.hahner/Documents/dev/stitch-data/build/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/lennart.hahner/Documents/dev/stitch-SQL/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lennart.hahner/Documents/dev/stitch-SQL /Users/lennart.hahner/Documents/dev/stitch-SQL /Users/lennart.hahner/Documents/dev/stitch-SQL/build /Users/lennart.hahner/Documents/dev/stitch-SQL/build /Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ContinuousConfigure.dir/depend
 
