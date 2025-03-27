@@ -5,13 +5,9 @@
  * development.
  *========================================================================**/
 #include "includes/sitich-sql.h"
+#include "includes/test_sitich-sql.h"
 
 const char* levels[] = {"SUCCESS","FAILURE"};
-signed int assertEquals(int inputv, int exepected);
-
-int test_getTokenClass(){
-    return 0;
-}
 
 int test_stitichSQL_getToken_keyword(){
     int type;
@@ -22,7 +18,7 @@ int test_stitichSQL_getToken_keyword(){
         fprintf(stdout, "[%s] - test_stitichSQL_getToken \n", levels[0]);
         return 0;
     }
-    else {
+    else {  
         fprintf(stderr, "[%s] - test_stitichSQL_getToken %d is not 2 \n", levels[1], type);
         return -1;
     }
@@ -32,6 +28,7 @@ int test_stitichSQL_getToken_bracket(){
     int type;
     const char* vtest = "{";
     stitichSQL_getToken(vtest, &type);
+
     if(type == 3){
         fprintf(stdout, "[%s] - test_stitichSQL_getToken_bracket \n", levels[0]);
         return 1;
@@ -42,6 +39,16 @@ int test_stitichSQL_getToken_bracket(){
     }
 }
 
-signed int assertEquals(int inputv, int exepected){
-    return 0;
+int test_stitichSQL_getTokenClass(){
+    char* vtest[] = {"@Test", "{"};
+    
+    int t = stitichSQL_getTokenClass(vtest);
+    if(t == 3){
+        fprintf(stdout, "[%s] - test_stitichSQL_getToken_bracket value: %d \n", levels[0], t);
+        return 1;
+    }
+    else {
+        fprintf(stderr, "[%s] - test_stitichSQL_getToken_bracket value: %d \n", levels[1], t);
+        return -1;
+    }
 }

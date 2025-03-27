@@ -5,9 +5,10 @@
  *========================================================================**/
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
 #define     STITICHSQL_ASCII    1
 #define     STITICHSQL_EBCDIC   2
-
 
 /**
  * @brief Get the Token object
@@ -15,14 +16,7 @@
  * @param pz 
  * @return int 
  */
-static int getTokenClass(const unsigned char **pz);
-
-/**
- * @brief Running test for the getTokenClass
- * 
- * @return int 
- */
-int test_getTokenClass();
+int stitichSQL_getTokenClass(unsigned char **pz);
 
 /**
  * @brief Given a token from the string to parse and will 
@@ -34,19 +28,3 @@ int test_getTokenClass();
  * @return int the size of the keyword and tokenclass
  */
 int stitichSQL_getToken(const unsigned char *z, int* tokenType);
-
-/**
- * @brief tests the stitichSQL_getToken function with a basic string
- * and if it is identfied with the correct class.
- * 
- * @return int 0 if sucessful and -1 if not
- */
-int test_stitichSQL_getToken_bracket();
-
-/**
- * @brief tests the stitichSQL_getToken function with a basic string
- * and if it is identfied with the correct class.
- * 
- * @return int 0 if sucessful and -1 if not
- */
-int test_stitichSQL_getToken_keyword();

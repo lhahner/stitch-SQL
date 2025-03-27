@@ -63,15 +63,19 @@ const char stitichSQL_EBCDIC[] = {
 };
 #endif
 
-static int getTokenClass(const unsigned char **pz) {
-    const unsigned char *z = *pz;
+int stitichSQL_getTokenClass(unsigned char **pz) {
+    unsigned char* z = *pz;
     int t;
-    z = z + stitichSQL_getToken(z, &t);
+    for(int i = 0; i<sizeof(char *)/(sizeof(char*)/2); i++){
+     stitichSQL_getToken(z, &t); 
+     pz++;
+     z = *pz;
+    }
     return t; // Class result for z
 }
 
 int stitichSQL_getToken(const unsigned char *z, int* tokenType){
-    int i, c;
+    int i;
     switch(stitichSQL_ASCII[*z]){
         case AT_KEYW0: {
             for(i = 0; stitichSQL_ASCII[z[i]]<AT_OBRACKET; i++){
