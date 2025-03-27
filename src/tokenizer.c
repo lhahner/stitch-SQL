@@ -14,27 +14,24 @@
 #define     AT_NUL              8 /* NULL */
 #define     AT_SPACE            9 /* Space */
 #define     AT_NUM              10 /* Numeric */
-#define     APETAIL             11 /* @ */
+#define     ID                  12 /* Identfier */
 
 // Define here the ASCII Code for the different Keywords.
 #ifdef STITICHSQL_ASCII
-/**
- * @brief 
- * 
- */
+
 const char stitichSQL_ASCII[] = {
 /*        x0  x1 x2 x3 x4 x5 x6 x7 x8 x9 xa xb xc xd xe xf */
 /* 0x */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
 /* 1x */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
 /* 2x */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
-/* 3x */  11,11,11,11,11,11,11,11,11,11, 9, 9, 9, 9, 9, 9,
-/* 4x */  12, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-/* 5x */   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
-/* 6x */   0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-/* 7x */   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
+/* 3x */   8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9,
+/* 4x */   1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+/* 5x */   2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 8, 8, 8, 8, 8,
+/* 6x */   8, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+/* 7x */   2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 8, 8, 8, 8,
 /* 8x */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
 /* 9x */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
-/* Ax */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
+/* Ax */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 8, 9, 9,
 /* Bx */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
 /* Cx */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
 /* Dx */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
@@ -43,10 +40,7 @@ const char stitichSQL_ASCII[] = {
 /* Fx */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9
 };
 #elif STITICHSQL_EBCDIC
-/**
- * @brief 
- * 
- */
+
 const char stitichSQL_EBCDIC[] = {
 /*        x0  x1 x2 x3 x4 x5 x6 x7 x8 x9 xa xb xc xd xe xf */
 /* 0x */   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
@@ -80,7 +74,7 @@ int stitichSQL_getToken(const unsigned char *z, int* tokenType){
     int i, c;
     switch(stitichSQL_ASCII[*z]){
         case AT_KEYW0: {
-            for(i = 0; stitichSQL_ASCII[z[i]]<AT_KEYW; i++){
+            for(i = 0; stitichSQL_ASCII[z[i]]<AT_OBRACKET; i++){
                 if(stitichSQL_ASCII[z[1]]>AT_KEYW) {
                     *tokenType = AT_ILLEGAL;
                     return -1;
@@ -90,7 +84,9 @@ int stitichSQL_getToken(const unsigned char *z, int* tokenType){
             return i;
         }
         case AT_OBRACKET: {
-            
+            *tokenType = AT_OBRACKET;
+            i++;
+            return i;
         }
         case AT_CBRACKET: {
 
@@ -111,9 +107,6 @@ int stitichSQL_getToken(const unsigned char *z, int* tokenType){
 
         }
         case AT_NUM: {
-
-        }
-        case APETAIL: {
 
         }
         default : {

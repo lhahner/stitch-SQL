@@ -8,6 +8,7 @@
 #define     STITICHSQL_ASCII    1
 #define     STITICHSQL_EBCDIC   2
 
+
 /**
  * @brief Get the Token object
  * 
@@ -40,4 +41,12 @@ int stitichSQL_getToken(const unsigned char *z, int* tokenType);
  * 
  * @return int 0 if sucessful and -1 if not
  */
-int test_stitichSQL_getToken();
+int test_stitichSQL_getToken_bracket();
+
+/**
+ * @brief tests the stitichSQL_getToken function with a basic string
+ * and if it is identfied with the correct class.
+ * 
+ * @return int 0 if sucessful and -1 if not
+ */
+int test_stitichSQL_getToken_keyword();
