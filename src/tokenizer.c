@@ -10,11 +10,13 @@
 #define     AT_CBRACKET         4 /* ) */
 #define     AT_OCBRACKET        5 /* { */
 #define     AT_CCBRACKET        6 /* } */
-#define     AT_ILLEGAL          7 /* Illegal character */
-#define     AT_NUL              8 /* NULL */
-#define     AT_SPACE            9 /* Space */
-#define     AT_NUM              10 /* Numeric */
-#define     ID                  12 /* Identfier */
+#define     AT_MINUS            7 /* } */
+#define     AT_ILLEGAL          8 /* Illegal character */
+#define     AT_NUL              9 /* NULL */
+#define     AT_SPACE            10 /* Space */
+#define     AT_NUM              11 /* Numeric */
+#define     AT_ID               12 /* Identfier */
+#define     AT_COMMENT          13 /* Comments */
 
 // Define here the ASCII Code for the different Keywords.
 #ifdef STITICHSQL_ASCII
@@ -23,7 +25,7 @@ const char stitichSQL_ASCII[] = {
 /*        x0  x1 x2 x3 x4 x5 x6 x7 x8 x9 xa xb xc xd xe xf */
 /* 0x */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
 /* 1x */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
-/* 2x */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9,
+/* 2x */   9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 7, 9, 9,
 /* 3x */   8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9,
 /* 4x */   1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
 /* 5x */   2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 8, 8, 8, 8, 8,
@@ -75,10 +77,22 @@ unsigned int stitichSQL_getTokenClass(unsigned char **pz, size_t size) {
 }
 
 int stitichSQL_getToken(const unsigned char *z, int* tokenType){
-    int i;
+    int i = 0, c;
     switch(stitichSQL_ASCII[*z]){
+        case AT_MINUS: {
+            if(z[1]=='-'){
+                for(i=2; c!=0&&c!='\n';i++){
+                    c = z[i];
+                }
+                *tokenType = AT_COMMENT;
+                return i;
+            }
+            else {
+                *tokenType = AT_NUL;
+            }
+        }
         case AT_KEYW0: {
-            for(i = 0; stitichSQL_ASCII[z[i]]<AT_OBRACKET; i++){
+            for(; stitichSQL_ASCII[z[i]]<AT_OBRACKET; i++){
                 if(stitichSQL_ASCII[z[1]]>AT_KEYW) {
                     *tokenType = AT_ILLEGAL;
                     return -1;
@@ -105,13 +119,10 @@ int stitichSQL_getToken(const unsigned char *z, int* tokenType){
 
         }
         case AT_NUL: {
-
+            i++;
         }
         case AT_SPACE: {
-
-        }
-        case AT_NUM: {
-
+            i++;
         }
         default : {
             *tokenType = AT_ILLEGAL;

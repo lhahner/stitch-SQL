@@ -2,6 +2,6 @@
 #include "./includes/test_sitich-sql.h"
 
 int main(int argc, char* args[]){
-    test_stitichSQL_getTokenClass();
+    test_stitichSQL_getToken_comment();
 }
 

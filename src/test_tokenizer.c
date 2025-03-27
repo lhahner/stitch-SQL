@@ -52,3 +52,18 @@ int test_stitichSQL_getTokenClass(){
         return -1;
     }
 }
+
+int test_stitichSQL_getToken_comment(){
+    int type;
+    char* tests = "-- Hello World";
+    stitichSQL_getToken(tests, &type);
+
+    if(type == 13){
+        fprintf(stdout, "[%s] - test_stitichSQL_getToken_bracket value: %d \n", levels[0], type);
+        return 1;
+    }
+    else {
+        fprintf(stderr, "[%s] - test_stitichSQL_getToken_bracket value: %d \n", levels[1], type);
+        return -1;
+    }
+}

@@ -19,3 +19,10 @@ int test_stitichSQL_getToken_keyword();
  * 
  */
 int test_stitichSQL_getTokenClass();
+
+/**
+ * @brief 
+ * 
+ * @return int 
+ */
+int test_stitichSQL_getToken_comment();
