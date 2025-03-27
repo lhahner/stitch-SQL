@@ -63,13 +63,13 @@ const char stitichSQL_EBCDIC[] = {
 };
 #endif
 
-int stitichSQL_getTokenClass(unsigned char **pz) {
+unsigned int stitichSQL_getTokenClass(unsigned char **pz, size_t size) {
     unsigned char* z = *pz;
     int t;
-    for(int i = 0; i<sizeof(char *)/(sizeof(char*)/2); i++){
-     stitichSQL_getToken(z, &t); 
-     pz++;
-     z = *pz;
+    for(int i = 0; i<size/sizeof(char*); i++){
+        stitichSQL_getToken(z, &t); 
+        pz++;
+        z = *pz;
     }
     return t; // Class result for z
 }

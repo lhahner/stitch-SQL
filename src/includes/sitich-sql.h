@@ -16,7 +16,7 @@
  * @param pz 
  * @return int 
  */
-int stitichSQL_getTokenClass(unsigned char **pz);
+unsigned int stitichSQL_getTokenClass(unsigned char **pz, size_t size);
 
 /**
  * @brief Given a token from the string to parse and will 

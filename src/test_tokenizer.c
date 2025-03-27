@@ -42,7 +42,7 @@ int test_stitichSQL_getToken_bracket(){
 int test_stitichSQL_getTokenClass(){
     char* vtest[] = {"@Test", "{"};
     
-    int t = stitichSQL_getTokenClass(vtest);
+    int t = stitichSQL_getTokenClass((unsigned char**)vtest, sizeof(vtest));
     if(t == 3){
         fprintf(stdout, "[%s] - test_stitichSQL_getToken_bracket value: %d \n", levels[0], t);
         return 1;
