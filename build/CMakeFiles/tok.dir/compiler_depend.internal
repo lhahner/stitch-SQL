@@ -8,8 +8,10 @@ CMakeFiles/tok.dir/src/main.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_abort.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_ctermid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_printf.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdlib.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_string.h
@@ -28,6 +30,7 @@ CMakeFiles/tok.dir/src/main.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/endian.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/signal.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/libkern/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/libkern/arm/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/mach/arm/_structs.h
@@ -103,8 +106,10 @@ CMakeFiles/tok.dir/src/test_tokenizer.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_abort.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_ctermid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_printf.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdlib.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_string.h
@@ -123,6 +128,7 @@ CMakeFiles/tok.dir/src/test_tokenizer.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/endian.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/signal.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/libkern/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/libkern/arm/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/mach/arm/_structs.h
@@ -198,8 +204,10 @@ CMakeFiles/tok.dir/src/tokenizer.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityVersions.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_abort.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_ctermid.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_printf.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdlib.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_string.h
@@ -218,6 +226,7 @@ CMakeFiles/tok.dir/src/tokenizer.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/endian.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/signal.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/arm/types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/libkern/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/libkern/arm/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/mach/arm/_structs.h
