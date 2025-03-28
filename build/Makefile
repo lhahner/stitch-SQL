@@ -129,77 +129,77 @@ tok/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/build
 .PHONY : tok/fast
 
-src/main.o: src/main.c.o
-.PHONY : src/main.o
+src/stitch-sql/stitch-sql.o: src/stitch-sql/stitch-sql.c.o
+.PHONY : src/stitch-sql/stitch-sql.o
 
 # target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/main.c.o
-.PHONY : src/main.c.o
+src/stitch-sql/stitch-sql.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o
+.PHONY : src/stitch-sql/stitch-sql.c.o
 
-src/main.i: src/main.c.i
-.PHONY : src/main.i
+src/stitch-sql/stitch-sql.i: src/stitch-sql/stitch-sql.c.i
+.PHONY : src/stitch-sql/stitch-sql.i
 
 # target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/main.c.i
-.PHONY : src/main.c.i
+src/stitch-sql/stitch-sql.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.i
+.PHONY : src/stitch-sql/stitch-sql.c.i
 
-src/main.s: src/main.c.s
-.PHONY : src/main.s
+src/stitch-sql/stitch-sql.s: src/stitch-sql/stitch-sql.c.s
+.PHONY : src/stitch-sql/stitch-sql.s
 
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/main.c.s
-.PHONY : src/main.c.s
+src/stitch-sql/stitch-sql.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.s
+.PHONY : src/stitch-sql/stitch-sql.c.s
 
-src/test_tokenizer.o: src/test_tokenizer.c.o
-.PHONY : src/test_tokenizer.o
+src/stitch-sql/tokenizer.o: src/stitch-sql/tokenizer.c.o
+.PHONY : src/stitch-sql/tokenizer.o
 
 # target to build an object file
-src/test_tokenizer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/test_tokenizer.c.o
-.PHONY : src/test_tokenizer.c.o
+src/stitch-sql/tokenizer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.o
+.PHONY : src/stitch-sql/tokenizer.c.o
 
-src/test_tokenizer.i: src/test_tokenizer.c.i
-.PHONY : src/test_tokenizer.i
+src/stitch-sql/tokenizer.i: src/stitch-sql/tokenizer.c.i
+.PHONY : src/stitch-sql/tokenizer.i
 
 # target to preprocess a source file
-src/test_tokenizer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/test_tokenizer.c.i
-.PHONY : src/test_tokenizer.c.i
+src/stitch-sql/tokenizer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.i
+.PHONY : src/stitch-sql/tokenizer.c.i
 
-src/test_tokenizer.s: src/test_tokenizer.c.s
-.PHONY : src/test_tokenizer.s
+src/stitch-sql/tokenizer.s: src/stitch-sql/tokenizer.c.s
+.PHONY : src/stitch-sql/tokenizer.s
 
 # target to generate assembly for a file
-src/test_tokenizer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/test_tokenizer.c.s
-.PHONY : src/test_tokenizer.c.s
+src/stitch-sql/tokenizer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.s
+.PHONY : src/stitch-sql/tokenizer.c.s
 
-src/tokenizer.o: src/tokenizer.c.o
-.PHONY : src/tokenizer.o
+src/test/test_tokenizer.o: src/test/test_tokenizer.c.o
+.PHONY : src/test/test_tokenizer.o
 
 # target to build an object file
-src/tokenizer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/tokenizer.c.o
-.PHONY : src/tokenizer.c.o
+src/test/test_tokenizer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/test/test_tokenizer.c.o
+.PHONY : src/test/test_tokenizer.c.o
 
-src/tokenizer.i: src/tokenizer.c.i
-.PHONY : src/tokenizer.i
+src/test/test_tokenizer.i: src/test/test_tokenizer.c.i
+.PHONY : src/test/test_tokenizer.i
 
 # target to preprocess a source file
-src/tokenizer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/tokenizer.c.i
-.PHONY : src/tokenizer.c.i
+src/test/test_tokenizer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/test/test_tokenizer.c.i
+.PHONY : src/test/test_tokenizer.c.i
 
-src/tokenizer.s: src/tokenizer.c.s
-.PHONY : src/tokenizer.s
+src/test/test_tokenizer.s: src/test/test_tokenizer.c.s
+.PHONY : src/test/test_tokenizer.s
 
 # target to generate assembly for a file
-src/tokenizer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/tokenizer.c.s
-.PHONY : src/tokenizer.c.s
+src/test/test_tokenizer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/test/test_tokenizer.c.s
+.PHONY : src/test/test_tokenizer.c.s
 
 # Help Target
 help:
@@ -210,15 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tok"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/test_tokenizer.o"
-	@echo "... src/test_tokenizer.i"
-	@echo "... src/test_tokenizer.s"
-	@echo "... src/tokenizer.o"
-	@echo "... src/tokenizer.i"
-	@echo "... src/tokenizer.s"
+	@echo "... src/stitch-sql/stitch-sql.o"
+	@echo "... src/stitch-sql/stitch-sql.i"
+	@echo "... src/stitch-sql/stitch-sql.s"
+	@echo "... src/stitch-sql/tokenizer.o"
+	@echo "... src/stitch-sql/tokenizer.i"
+	@echo "... src/stitch-sql/tokenizer.s"
+	@echo "... src/test/test_tokenizer.o"
+	@echo "... src/test/test_tokenizer.i"
+	@echo "... src/test/test_tokenizer.s"
 .PHONY : help
 
 

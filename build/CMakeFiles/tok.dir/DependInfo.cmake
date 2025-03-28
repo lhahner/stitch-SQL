@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/lennart.hahner/Documents/dev/stitch-SQL/src/main.c" "CMakeFiles/tok.dir/src/main.c.o" "gcc" "CMakeFiles/tok.dir/src/main.c.o.d"
-  "/Users/lennart.hahner/Documents/dev/stitch-SQL/src/test_tokenizer.c" "CMakeFiles/tok.dir/src/test_tokenizer.c.o" "gcc" "CMakeFiles/tok.dir/src/test_tokenizer.c.o.d"
-  "/Users/lennart.hahner/Documents/dev/stitch-SQL/src/tokenizer.c" "CMakeFiles/tok.dir/src/tokenizer.c.o" "gcc" "CMakeFiles/tok.dir/src/tokenizer.c.o.d"
+  "/Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/stitch-sql.c" "CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o" "gcc" "CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o.d"
+  "/Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/tokenizer.c" "CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.o" "gcc" "CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.o.d"
+  "/Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_tokenizer.c" "CMakeFiles/tok.dir/src/test/test_tokenizer.c.o" "gcc" "CMakeFiles/tok.dir/src/test/test_tokenizer.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

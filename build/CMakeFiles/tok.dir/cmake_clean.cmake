@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tok.dir/src/main.c.o"
-  "CMakeFiles/tok.dir/src/main.c.o.d"
-  "CMakeFiles/tok.dir/src/test_tokenizer.c.o"
-  "CMakeFiles/tok.dir/src/test_tokenizer.c.o.d"
-  "CMakeFiles/tok.dir/src/tokenizer.c.o"
-  "CMakeFiles/tok.dir/src/tokenizer.c.o.d"
+  "CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o"
+  "CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o.d"
+  "CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.o"
+  "CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.o.d"
+  "CMakeFiles/tok.dir/src/test/test_tokenizer.c.o"
+  "CMakeFiles/tok.dir/src/test/test_tokenizer.c.o.d"
   "tok"
   "tok.pdb"
 )
