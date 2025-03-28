@@ -81,10 +81,31 @@ The follwing should be a basic concept for the mapping approach:
 
 ````
 @Worksheet {
-    @Table(NAME) {
-        @Row {
-        SELECT @Cell NAME FROM EMPLOYEES WHERE AGE > 2;
-        }
-    }
+ @Table(NAME) {
+    @Row {
+     SELECT 
+        @Cell NAME, 
+        @Cell AGE 
+    FROM EMPLOYEES WHERE AGE > 2;
+  }
+ }
 }
 ````
+
+possible output:
+
+`````
+WITH STATEMENT(CONTENT) AS (
+SELECT <Cell><Data>|| NAME ||</Data></Cell> FROM EMPLOYEES WHERE AGE > 2;
+)
+SELECT '<Worksheet>' FROM SYSIBM.SYSDUMMY;
+    UNION ALL
+SELECT '<Table>' FROM SYSIBM.SYSDUMMY
+    UNION ALL
+SELECT '<Row>' FROM SYSIBM.SYSDUMMY
+    UNION ALL
+SELECT CONTENT FROM STATEMENT;
+    UNION ALL
+SELECT '</Row></Worksheet></Table>' FROM SYSIBM.SYSDUMMY;
+``````
+

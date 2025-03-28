@@ -4,7 +4,7 @@
  * 
  * @return int 0 if sucessful and -1 if not
  */
-int test_stitichSQL_getToken_bracket();
+int test_stitchSQL_getToken_curly_bracket();
 
 /**
  * @brief tests the stitichSQL_getToken function with a basic string
@@ -12,17 +12,24 @@ int test_stitichSQL_getToken_bracket();
  * 
  * @return int 0 if sucessful and -1 if not
  */
-int test_stitichSQL_getToken_keyword();
+int test_stitchSQL_getToken_keyword();
 
 /**
  * @brief Construct a new test stitichSQL getTokenClass object
  * 
  */
-int test_stitichSQL_getTokenClass();
+int test_stitchSQL_getTokenClass();
 
 /**
  * @brief 
  * 
  * @return int 
  */
-int test_stitichSQL_getToken_comment();
+int test_stitchSQL_getToken_comment();
+
+/**
+ * @brief 
+ * 
+ * @return int 
+ */
+int test_stitchSQL_getToken_bracket();

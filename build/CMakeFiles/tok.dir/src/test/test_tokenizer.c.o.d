@@ -1,5 +1,6 @@
 CMakeFiles/tok.dir/src/test/test_tokenizer.c.o: \
   /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_tokenizer.c \
+  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/../stitch-SQL/includes/tokenizer.h \
   /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/../stitch-SQL/includes/stitch-sql.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h \
