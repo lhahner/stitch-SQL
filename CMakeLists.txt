@@ -4,6 +4,8 @@ project(sitich-sql)
 add_executable(tok 
     src/stitch-sql/stitch-sql.c 
     src/stitch-sql/tokenizer.c 
-    src/test/test_tokenizer.c)
+    src/stitch-sql/astree.c
+    src/test/test_tokenizer.c
+    src/test/test_astree.c)
 # Set build type
 set(CMAKE_BUILD_TYPE Debug)

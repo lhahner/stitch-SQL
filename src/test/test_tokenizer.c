@@ -4,7 +4,6 @@
  * Tests the Cide running in tokenizer, this code is only executed during
  * development.
  *========================================================================**/
-#include "../stitch-SQL/includes/tokenizer.h"
 #include "./includes/test_tokenizer.h"
 
 int test_stitchSQL_getToken_keyword(){

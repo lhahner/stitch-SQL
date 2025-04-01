@@ -1,3 +1,5 @@
+#include "../../stitch-sql/includes/tokenizer.h"
+
 /**
  * @brief tests the stitichSQL_getToken function with a basic string
  * and if it is identfied with the correct class.

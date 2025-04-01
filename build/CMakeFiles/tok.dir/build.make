@@ -100,10 +100,24 @@ CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/tokenizer.c -o CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.s
 
+CMakeFiles/tok.dir/src/stitch-sql/astree.c.o: CMakeFiles/tok.dir/flags.make
+CMakeFiles/tok.dir/src/stitch-sql/astree.c.o: /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/astree.c
+CMakeFiles/tok.dir/src/stitch-sql/astree.c.o: CMakeFiles/tok.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tok.dir/src/stitch-sql/astree.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tok.dir/src/stitch-sql/astree.c.o -MF CMakeFiles/tok.dir/src/stitch-sql/astree.c.o.d -o CMakeFiles/tok.dir/src/stitch-sql/astree.c.o -c /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/astree.c
+
+CMakeFiles/tok.dir/src/stitch-sql/astree.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tok.dir/src/stitch-sql/astree.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/astree.c > CMakeFiles/tok.dir/src/stitch-sql/astree.c.i
+
+CMakeFiles/tok.dir/src/stitch-sql/astree.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tok.dir/src/stitch-sql/astree.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/astree.c -o CMakeFiles/tok.dir/src/stitch-sql/astree.c.s
+
 CMakeFiles/tok.dir/src/test/test_tokenizer.c.o: CMakeFiles/tok.dir/flags.make
 CMakeFiles/tok.dir/src/test/test_tokenizer.c.o: /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_tokenizer.c
 CMakeFiles/tok.dir/src/test/test_tokenizer.c.o: CMakeFiles/tok.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tok.dir/src/test/test_tokenizer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tok.dir/src/test/test_tokenizer.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tok.dir/src/test/test_tokenizer.c.o -MF CMakeFiles/tok.dir/src/test/test_tokenizer.c.o.d -o CMakeFiles/tok.dir/src/test/test_tokenizer.c.o -c /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_tokenizer.c
 
 CMakeFiles/tok.dir/src/test/test_tokenizer.c.i: cmake_force
@@ -114,21 +128,39 @@ CMakeFiles/tok.dir/src/test/test_tokenizer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tok.dir/src/test/test_tokenizer.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_tokenizer.c -o CMakeFiles/tok.dir/src/test/test_tokenizer.c.s
 
+CMakeFiles/tok.dir/src/test/test_astree.c.o: CMakeFiles/tok.dir/flags.make
+CMakeFiles/tok.dir/src/test/test_astree.c.o: /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_astree.c
+CMakeFiles/tok.dir/src/test/test_astree.c.o: CMakeFiles/tok.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/tok.dir/src/test/test_astree.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tok.dir/src/test/test_astree.c.o -MF CMakeFiles/tok.dir/src/test/test_astree.c.o.d -o CMakeFiles/tok.dir/src/test/test_astree.c.o -c /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_astree.c
+
+CMakeFiles/tok.dir/src/test/test_astree.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tok.dir/src/test/test_astree.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_astree.c > CMakeFiles/tok.dir/src/test/test_astree.c.i
+
+CMakeFiles/tok.dir/src/test/test_astree.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tok.dir/src/test/test_astree.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_astree.c -o CMakeFiles/tok.dir/src/test/test_astree.c.s
+
 # Object files for target tok
 tok_OBJECTS = \
 "CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o" \
 "CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.o" \
-"CMakeFiles/tok.dir/src/test/test_tokenizer.c.o"
+"CMakeFiles/tok.dir/src/stitch-sql/astree.c.o" \
+"CMakeFiles/tok.dir/src/test/test_tokenizer.c.o" \
+"CMakeFiles/tok.dir/src/test/test_astree.c.o"
 
 # External object files for target tok
 tok_EXTERNAL_OBJECTS =
 
 tok: CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o
 tok: CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.o
+tok: CMakeFiles/tok.dir/src/stitch-sql/astree.c.o
 tok: CMakeFiles/tok.dir/src/test/test_tokenizer.c.o
+tok: CMakeFiles/tok.dir/src/test/test_astree.c.o
 tok: CMakeFiles/tok.dir/build.make
 tok: CMakeFiles/tok.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable tok"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lennart.hahner/Documents/dev/stitch-SQL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable tok"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tok.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,6 +1,6 @@
-CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o: \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/stitch-sql.c \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/./includes/stitch-sql.h \
+CMakeFiles/tok.dir/src/stitch-sql/astree.c.o: \
+  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/astree.c \
+  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/includes/astree.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -93,9 +93,4 @@ CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/secure/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/../test/includes/test_tokenizer.h \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/../test/includes/../../stitch-sql/includes/tokenizer.h \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/../test/includes/../../stitch-sql/includes/stitch-sql.h \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/../test/includes/test_astree.h \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/stitch-sql/../test/includes/../../stitch-sql/includes/astree.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h

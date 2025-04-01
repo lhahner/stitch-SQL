@@ -1,7 +1,8 @@
 CMakeFiles/tok.dir/src/test/test_tokenizer.c.o: \
   /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/test_tokenizer.c \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/../stitch-SQL/includes/tokenizer.h \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/../stitch-SQL/includes/stitch-sql.h \
+  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/./includes/test_tokenizer.h \
+  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/./includes/../../stitch-sql/includes/tokenizer.h \
+  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/./includes/../../stitch-sql/includes/stitch-sql.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
@@ -94,5 +95,4 @@ CMakeFiles/tok.dir/src/test/test_tokenizer.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/secure/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h \
-  /Users/lennart.hahner/Documents/dev/stitch-SQL/src/test/./includes/test_tokenizer.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_static_assert.h

@@ -129,6 +129,30 @@ tok/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/build
 .PHONY : tok/fast
 
+src/stitch-sql/astree.o: src/stitch-sql/astree.c.o
+.PHONY : src/stitch-sql/astree.o
+
+# target to build an object file
+src/stitch-sql/astree.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/astree.c.o
+.PHONY : src/stitch-sql/astree.c.o
+
+src/stitch-sql/astree.i: src/stitch-sql/astree.c.i
+.PHONY : src/stitch-sql/astree.i
+
+# target to preprocess a source file
+src/stitch-sql/astree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/astree.c.i
+.PHONY : src/stitch-sql/astree.c.i
+
+src/stitch-sql/astree.s: src/stitch-sql/astree.c.s
+.PHONY : src/stitch-sql/astree.s
+
+# target to generate assembly for a file
+src/stitch-sql/astree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/astree.c.s
+.PHONY : src/stitch-sql/astree.c.s
+
 src/stitch-sql/stitch-sql.o: src/stitch-sql/stitch-sql.c.o
 .PHONY : src/stitch-sql/stitch-sql.o
 
@@ -177,6 +201,30 @@ src/stitch-sql/tokenizer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.s
 .PHONY : src/stitch-sql/tokenizer.c.s
 
+src/test/test_astree.o: src/test/test_astree.c.o
+.PHONY : src/test/test_astree.o
+
+# target to build an object file
+src/test/test_astree.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/test/test_astree.c.o
+.PHONY : src/test/test_astree.c.o
+
+src/test/test_astree.i: src/test/test_astree.c.i
+.PHONY : src/test/test_astree.i
+
+# target to preprocess a source file
+src/test/test_astree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/test/test_astree.c.i
+.PHONY : src/test/test_astree.c.i
+
+src/test/test_astree.s: src/test/test_astree.c.s
+.PHONY : src/test/test_astree.s
+
+# target to generate assembly for a file
+src/test/test_astree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tok.dir/build.make CMakeFiles/tok.dir/src/test/test_astree.c.s
+.PHONY : src/test/test_astree.c.s
+
 src/test/test_tokenizer.o: src/test/test_tokenizer.c.o
 .PHONY : src/test/test_tokenizer.o
 
@@ -210,12 +258,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tok"
+	@echo "... src/stitch-sql/astree.o"
+	@echo "... src/stitch-sql/astree.i"
+	@echo "... src/stitch-sql/astree.s"
 	@echo "... src/stitch-sql/stitch-sql.o"
 	@echo "... src/stitch-sql/stitch-sql.i"
 	@echo "... src/stitch-sql/stitch-sql.s"
 	@echo "... src/stitch-sql/tokenizer.o"
 	@echo "... src/stitch-sql/tokenizer.i"
 	@echo "... src/stitch-sql/tokenizer.s"
+	@echo "... src/test/test_astree.o"
+	@echo "... src/test/test_astree.i"
+	@echo "... src/test/test_astree.s"
 	@echo "... src/test/test_tokenizer.o"
 	@echo "... src/test/test_tokenizer.i"
 	@echo "... src/test/test_tokenizer.s"

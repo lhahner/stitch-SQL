@@ -2,6 +2,7 @@
     "files.associations": {
         "sitich-sql.h": "c",
         "test_sitich-sql.h": "c",
-        "test_tokenizer.h": "c"
+        "test_tokenizer.h": "c",
+        "tokenizer.h": "c"
     }
 }
