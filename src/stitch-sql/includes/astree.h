@@ -18,9 +18,18 @@ typedef struct Astree_token {
 typedef struct Astree_node {
     Astree_token token;
     // etc ...
-    struct Astree_node *left;
-    struct Astree_node *right;
+    struct Astree_node *childs;
+    int childCount; // Number of children
 } Astree_node;
+
+/**
+ * @brief 
+ * 
+ * @param ast 
+ * @return Astree_node* 
+ */
+Astree_node *ast_new(Astree_node ast);
+
 /**
  * @brief 
  * 

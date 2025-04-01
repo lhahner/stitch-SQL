@@ -6,27 +6,47 @@
  *========================================================================**/
 #include "includes/astree.h"
 
+Astree_node *ast_new(Astree_node ast) {
+  Astree_node *ptr = malloc(sizeof(Astree_node));
+  if (ptr) *ptr = ast;
+  return ptr;
+}  
+
 void stitchSQL_pushAstreeNode(Astree_token* token, Astree_node** parent) {
     Astree_node *newNode = malloc(sizeof(Astree_node));
     newNode->token = *token;
-    newNode->left = NULL;
-    newNode->right = NULL;
+    newNode->childs = NULL;
+    newNode->childCount = 0;
 
+    // Root
     if (*parent == NULL) {
-        *parent = newNode;  // Assign newNode to root
+        *parent = newNode;
         return;
-    } else if ((*parent)->left == NULL) {
-        (*parent)->left = newNode;
-        return;
-    } else if((*parent)->right == NULL) {
-        (*parent)->right = newNode;
-        return;
+    } 
+    // Lower Hierachy
+    else if((*parent)->token.tokenType < token->tokenType){
+        if((*parent)->childs == NULL || (*parent)->childs->token.tokenType == token->tokenType){
+            if(((*parent)->childs != NULL)){
+                (*parent)->childCount++;
+                (*parent)->childs = realloc((*parent)->childs, sizeof(Astree_node) * (*parent)->childCount);
+                (*parent)->childs[(*parent)->childCount] = (*newNode);
+                return;
+            }
+            else {
+                (*parent)->childs = newNode;
+                return;
+            }
+        } 
+        else {
+            stitchSQL_pushAstreeNode(token, &(*parent)->childs);
+            return;
+        }
     } else {
-        stitchSQL_pushAstreeNode(token, &(*parent)->left);
+        if(((*parent) != NULL)){
+            (*parent)->childCount++;
+            *parent = realloc(*parent, sizeof(Astree_node) * (*parent)->childCount);
+            (*parent)[(*parent)->childCount] = (*newNode);
+            return;
+        }
     }
-    return;
-}
-
-void stitchSQL_popAstreeNode(Astree_node** root) {
-    //TODO
 }
