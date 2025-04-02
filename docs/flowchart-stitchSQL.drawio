@@ -1,0 +1,89 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
+  <diagram name="Page-1" id="oQYofOqJPCaHeyu1vDKv">
+    <mxGraphModel dx="775" dy="421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h_QUromxVKm3RSbmxBrV-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h_QUromxVKm3RSbmxBrV-5" target="h_QUromxVKm3RSbmxBrV-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-5" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;i&gt;Code&lt;br&gt;Input&lt;/i&gt;&lt;/font&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="10" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h_QUromxVKm3RSbmxBrV-6" target="h_QUromxVKm3RSbmxBrV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-6" value="&lt;i&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Tokenizer&lt;/font&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h_QUromxVKm3RSbmxBrV-8" target="h_QUromxVKm3RSbmxBrV-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-8" value="&lt;i&gt;&lt;font face=&quot;Times New Roman&quot;&gt;ASTree&lt;/font&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-10" value="&lt;i&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Code&lt;br&gt;Generator&lt;/font&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h_QUromxVKm3RSbmxBrV-12" target="h_QUromxVKm3RSbmxBrV-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h_QUromxVKm3RSbmxBrV-12" target="h_QUromxVKm3RSbmxBrV-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-24" value="&lt;font face=&quot;Times New Roman&quot;&gt;No&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h_QUromxVKm3RSbmxBrV-19">
+          <mxGeometry x="-0.2822" y="-1" relative="1" as="geometry">
+            <mxPoint x="8" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-12" value="&lt;i&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Database ?&lt;/font&gt;&lt;/i&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="h_QUromxVKm3RSbmxBrV-10" target="h_QUromxVKm3RSbmxBrV-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h_QUromxVKm3RSbmxBrV-15" target="h_QUromxVKm3RSbmxBrV-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-15" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;i&gt;Execute query&lt;br&gt;in Database&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="120" y="480" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-18" value="&lt;div style=&quot;&quot;&gt;&lt;i style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Intermediate&lt;/i&gt;&lt;/div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;i style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Code&lt;/i&gt;&lt;/div&gt;&lt;i&gt;&lt;div style=&quot;&quot;&gt;&lt;i style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Output&lt;/i&gt;&lt;/div&gt;&lt;/i&gt;&lt;/font&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;align=center;" vertex="1" parent="1">
+          <mxGeometry x="350" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-21" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;i&gt;XML&lt;br&gt;Output&lt;br&gt;&lt;/i&gt;&lt;/font&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="120" y="560" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-25" value="&lt;font face=&quot;Times New Roman&quot;&gt;Yes&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="320.1538461538462" y="400" as="geometry">
+            <mxPoint x="-140" y="46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-27" value="&lt;i&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Der Tokenizer soll basierend auf&amp;nbsp;&lt;br&gt;den Macro-Einstellungen zu unterschiedlichen Dateiformaten mappen&lt;/font&gt;&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="125" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-28" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;i&gt;Das Endateiformat sollte durch eine Headerdatei definiert werden.&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="565" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-29" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;i&gt;Traversierung des Baums sollte hier passieren.&amp;nbsp;&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="285" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-30" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;i&gt;Interne Datenstruktur als Art- Abstrakter-Syntax Baum&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="205" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-31" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;i&gt;Databankverbindung nötig&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="485" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h_QUromxVKm3RSbmxBrV-32" target="h_QUromxVKm3RSbmxBrV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-32" value="&lt;i&gt;&lt;font face=&quot;Times New Roman&quot;&gt;CLIinterpretes&lt;/font&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="180" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h_QUromxVKm3RSbmxBrV-35" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;i&gt;Interpreting the string provided by CLI&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320.15" y="45" width="210" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

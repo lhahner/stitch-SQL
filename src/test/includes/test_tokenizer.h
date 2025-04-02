@@ -1,37 +1,51 @@
 #include "../../stitch-sql/includes/tokenizer.h"
 
 /**
- * @brief tests the stitichSQL_getToken function with a basic string
- * and if it is identfied with the correct class.
+ * @brief Tests the stitchSQL_getToken function for recognizing curly brackets.
  * 
- * @return int 0 if sucessful and -1 if not
+ * This function checks if the tokenizer correctly identifies curly brackets `{}` 
+ * and assigns them the appropriate token class.
+ * 
+ * @return int Returns 0 if successful, -1 if not.
  */
-int test_stitchSQL_getToken_curly_bracket();
+int test_stitchSQL_getToken_curly_bracket(void);
 
 /**
- * @brief tests the stitichSQL_getToken function with a basic string
- * and if it is identfied with the correct class.
+ * @brief Tests the stitchSQL_getToken function for recognizing SQL keywords.
  * 
- * @return int 0 if sucessful and -1 if not
+ * This function verifies if the tokenizer correctly identifies SQL keywords 
+ * (e.g., SELECT, INSERT, WHERE) and classifies them properly.
+ * 
+ * @return int Returns 0 if successful, -1 if not.
  */
-int test_stitchSQL_getToken_keyword();
+int test_stitchSQL_getToken_keyword(void);
 
 /**
- * @brief Construct a new test stitichSQL getTokenClass object
+ * @brief Tests the stitchSQL_getTokenClass function.
  * 
+ * This function ensures that the token classification mechanism properly 
+ * assigns the correct token type to various input strings.
+ * 
+ * @return int Returns 0 if successful, -1 if not.
  */
-int test_stitchSQL_getTokenClass();
+int test_stitchSQL_getTokenClass(void);
 
 /**
- * @brief 
+ * @brief Tests the stitchSQL_getToken function for recognizing comments.
  * 
- * @return int 
+ * This function checks whether the tokenizer correctly identifies single-line (`--`) 
+ * comments.
+ * 
+ * @return int Returns 0 if successful, -1 if not.
  */
-int test_stitchSQL_getToken_comment();
+int test_stitchSQL_getToken_comment(void);
 
 /**
- * @brief 
+ * @brief Tests the stitchSQL_getToken function for recognizing brackets.
  * 
- * @return int 
+ * This function verifies if the tokenizer correctly identifies different types of brackets 
+ * such as `()`, `[]`, and assigns them the correct token classification.
+ * 
+ * @return int Returns 0 if successful, -1 if not.
  */
-int test_stitchSQL_getToken_bracket();
+int test_stitchSQL_getToken_bracket(void);

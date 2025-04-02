@@ -1,17 +1,28 @@
 /**========================================================================
  * 2025 March 31
  *
- * Abstract Syntax tree for storing all the tokens that the tokenizer
+ * Abstract Syntax tree/list for storing all the tokens that the tokenizer
  * will provide and that are replaced by different strings.
  *========================================================================**/
 #include "includes/astree.h"
 
-Astree_node *ast_new(Astree_node ast)
+Astree_token *stitchSQL_astreetoken_new(int token){
+    Astree_token *ptr = malloc(sizeof(Astree_token));
+    ptr->tokenType = token;
+    if (ptr)
+        return ptr;
+    else
+        return NULL;
+}
+
+Astree_node *stitchSQL_astree_new(Astree_token *token)
 {
     Astree_node *ptr = malloc(sizeof(Astree_node));
+    ptr->token.tokenType = token->tokenType;
     if (ptr)
-        *ptr = ast;
-    return ptr;
+        return ptr;
+    else
+        return NULL;
 }
 
 void stitchSQL_pushAstreeNode(Astree_token *token, Astree_node **parent)

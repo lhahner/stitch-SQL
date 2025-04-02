@@ -3,23 +3,18 @@
 int test_stitchSQL_pushAstreeNode(void) {
     Astree_node *root = NULL;  // Initialize to NULL
     Astree_token *token = malloc(sizeof(Astree_token));
-    token->tokenLength = 5;
     token->tokenType = 1; // Worksheet
 
     Astree_token *token1 = malloc(sizeof(Astree_token));
-    token1->tokenLength = 5;
     token1->tokenType = 2; // Table
 
     Astree_token *token2 = malloc(sizeof(Astree_token));
-    token2->tokenLength = 7;
     token2->tokenType = 2; // Table
 
     Astree_token *token4 = malloc(sizeof(Astree_token));
-    token4->tokenLength = 7;
     token4->tokenType = 4; // Row
 
     Astree_token *token3 = malloc(sizeof(Astree_token));
-    token3->tokenLength = 7;
     token3->tokenType = 3; // Cell
 
     stitchSQL_pushAstreeNode(token, &root);
@@ -30,26 +25,21 @@ int test_stitchSQL_pushAstreeNode(void) {
     return 0;
 }
 
-int test_stitchSQL_popAstreeNode(){
+int test_stitchSQL_popAstreeNode(void){
     Astree_node *root = NULL;  // Initialize to NULL
     Astree_token *token = malloc(sizeof(Astree_token));
-    token->tokenLength = 5;
     token->tokenType = 1; // Worksheet
 
     Astree_token *token1 = malloc(sizeof(Astree_token));
-    token1->tokenLength = 5;
     token1->tokenType = 2; // Table
 
     Astree_token *token2 = malloc(sizeof(Astree_token));
-    token2->tokenLength = 7;
     token2->tokenType = 2; // Table
 
     Astree_token *token4 = malloc(sizeof(Astree_token));
-    token4->tokenLength = 7;
     token4->tokenType = 4; // Row
 
     Astree_token *token3 = malloc(sizeof(Astree_token));
-    token3->tokenLength = 7;
     token3->tokenType = 3; // Cell
 
     stitchSQL_pushAstreeNode(token, &root);
@@ -61,4 +51,15 @@ int test_stitchSQL_popAstreeNode(){
     stitchSQL_popAstreeNode(&root);
 
     assert(&root->childs->childs[1] != 3);
+    return 0;
 }
+
+int test_stitchSQL_astreetoken_new(void){
+    Astree_token* token = stitchSQL_astreetoken_new(0);
+    Astree_node* ast = stitchSQL_astree_new(token);
+    Astree_token* token1 = stitchSQL_astreetoken_new(2);
+    stitchSQL_pushAstreeNode(token1, &ast);
+    assert(ast != NULL);
+    return 0;
+}
+
