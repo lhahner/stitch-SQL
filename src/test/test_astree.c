@@ -63,3 +63,19 @@ int test_stitchSQL_astreetoken_new(void){
     return 0;
 }
 
+int test_stitchSQL_pushAStreeNode_caseA(void){
+    Astree_token* token = stitchSQL_astreetoken_new(9);
+    Astree_node* ast = stitchSQL_astree_new(token);
+
+    Astree_token* token1 = stitchSQL_astreetoken_new(8);
+    stitchSQL_pushAstreeNode(token1, &ast);
+
+    Astree_token* token2 = stitchSQL_astreetoken_new(7);
+    stitchSQL_pushAstreeNode(token2, &ast);
+
+    Astree_token* token3 = stitchSQL_astreetoken_new(7);
+    stitchSQL_pushAstreeNode(token3, &ast);
+    
+    assert(ast->childs == NULL);
+    return 0;
+}

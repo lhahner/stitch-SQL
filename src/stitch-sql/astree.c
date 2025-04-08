@@ -19,6 +19,7 @@ Astree_node *stitchSQL_astree_new(Astree_token *token)
 {
     Astree_node *ptr = malloc(sizeof(Astree_node));
     ptr->token.tokenType = token->tokenType;
+    ptr->tokenCount = 1; // Always one if allocated
     if (ptr)
         return ptr;
     else
@@ -30,7 +31,8 @@ void stitchSQL_pushAstreeNode(Astree_token *token, Astree_node **parent)
     Astree_node *newNode = malloc(sizeof(Astree_node));
     newNode->token = *token;
     newNode->childs = NULL;
-    newNode->childCount = 1;
+    newNode->tokenCount = 1;
+    newNode->childCount = 0;
 
     // Root
     if (*parent == NULL)
@@ -66,9 +68,9 @@ void stitchSQL_pushAstreeNode(Astree_token *token, Astree_node **parent)
     {
         if (((*parent) != NULL))
         {
-            (*parent)->childCount++;
-            *parent = realloc(*parent, sizeof(Astree_node) * (*parent)->childCount);
-            (*parent)[(*parent)->childCount-1] = (*newNode);
+            (*parent)->tokenCount++;
+            *parent = realloc(*parent, sizeof(Astree_node) * (*parent)->tokenCount);
+            (*parent)[(*parent)->tokenCount-1] = (*newNode);
             return;
         }
     }

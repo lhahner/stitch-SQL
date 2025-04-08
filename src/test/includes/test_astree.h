@@ -38,4 +38,4 @@ int test_stitchSQL_astreetoken_new(void);
  * 
  * @return int Returns 0 if the test passes, non-zero if it fails.
  */
-int test_stitchSQL_pushAstreeNode_caseA(void);
+int test_stitchSQL_pushAStreeNode_caseA(void);

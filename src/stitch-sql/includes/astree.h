@@ -19,6 +19,7 @@ typedef struct Astree_node {
     Astree_token token;  /**< Token associated with this node */
     // Add any additional fields here (e.g., parent pointer, sibling pointer, etc.)
     struct Astree_node *childs;  /**< Pointer to the list of child nodes */
+    int tokenCount; /** Count of items in current node */
     int childCount;   /**< Number of children of this node */
 } Astree_node;
 
