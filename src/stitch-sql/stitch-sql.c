@@ -3,6 +3,5 @@
 #include "../test/includes/test_astree.h"
 
 int main(int argc, char* args[]){
-    test_stitchSQL_pushAStreeNode_caseA();
 }
 

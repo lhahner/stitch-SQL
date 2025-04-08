@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
+#include <math.h>
 
 /**
  * @brief Represents a token in the abstract syntax tree (AST).
@@ -19,7 +20,7 @@ typedef struct Astree_node {
     Astree_token token;  /**< Token associated with this node */
     // Add any additional fields here (e.g., parent pointer, sibling pointer, etc.)
     struct Astree_node *childs;  /**< Pointer to the list of child nodes */
-    int tokenCount; /** Count of items in current node */
+    int* tokenCount; /** Count of items in current node, pointer to first */
     int childCount;   /**< Number of children of this node */
 } Astree_node;
 
@@ -59,3 +60,12 @@ Astree_node *stitchSQL_astree_new(Astree_token *token);
  * @return Astree_token* Pointer to the newly created token, or NULL on failure.
  */
 Astree_token *stitchSQL_astreetoken_new(int token);
+
+/**
+ * @brief Returns the length of the Astree in terms of length, so depth of
+ * childs in the complete data-structure
+ * 
+ * @param 
+ * @return int the size of the Astree, so depth, number of child elements
+ */
+int stitchSQL_AstreeLength(Astree_node** root);

@@ -3,6 +3,7 @@
         "sitich-sql.h": "c",
         "test_sitich-sql.h": "c",
         "test_tokenizer.h": "c",
-        "tokenizer.h": "c"
+        "tokenizer.h": "c",
+        "bitset": "c"
     }
 }

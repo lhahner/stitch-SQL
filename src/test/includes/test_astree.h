@@ -1,5 +1,19 @@
+/**
+ * @file test_astree.h
+ * @author Lennart Hahner (lennart.hahner@gmail.com)
+ * @brief This file containes header data for the test code written in test_astree.c
+ * @version 0.1
+ * @date 2025-04-08
+ * 
+ * 
+ *     (\            Stitch-SQL Copyright (C) 2025 Lennart Hahner
+ *    (  \  /(o)\    All Rights Reserved, do not use, distribute 
+ *    (   \/  ()/ /) and modify this code.
+ *     (   `;.))'".) 
+ *      `(/////.-'
+ *   =====))=))===() 
+ */
 #include "../../stitch-sql/includes/astree.h"
-
 /**
  * @brief Tests the functionality of pushing a node onto the AST (Abstract Syntax Tree) stack.
  * 
@@ -39,3 +53,26 @@ int test_stitchSQL_astreetoken_new(void);
  * @return int Returns 0 if the test passes, non-zero if it fails.
  */
 int test_stitchSQL_pushAStreeNode_caseA(void);
+
+/**
+ * @brief Unit test for stitchSQL_popAstreeNode with a specific test case (Case A).
+ * 
+ * This function tests the behavior of stitchSQL_popAstreeNode in a predefined scenario.
+ * It verifies if the function correctly removes a node.
+ * 
+ * @return int Returns 0 if the test passes, non-zero if it fails.
+ */
+int test_stitchSQL_popAstreeNode_caseA(void);
+
+/**
+ * @brief Unit test for stitchSQL_popAstreeNode_caseB with a specific test case (Case A).
+ * 
+ * This function tests the behavior of stitchSQL_popAstreeNode_caseB in a predefined scenario.
+ * It verifies if the function correctly removes a node.
+ * 
+ * @return int Returns 0 if the test passes, non-zero if it fails.
+ */
+int test_stitchSQL_popAstreeNode_caseB(void);
+
+
+int test_stitchSQL_AstreeLength(void);
