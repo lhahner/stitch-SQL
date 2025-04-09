@@ -160,3 +160,30 @@ int test_stitchSQL_AstreeLength(void){
     assert(c == 3);
     return 0;
 }
+
+int test_stitchSQL_pushAstreeNode_caseC(void){
+     // Construction of test AST
+    Astree_token* token = stitchSQL_astreetoken_new(0);
+    Astree_node* ast = stitchSQL_astree_new(token);
+
+    Astree_token* token1 = stitchSQL_astreetoken_new(1);
+    stitchSQL_pushAstreeNode(token1, &ast);
+
+    Astree_token* token2 = stitchSQL_astreetoken_new(2);
+    stitchSQL_pushAstreeNode(token2, &ast);
+
+    Astree_token* token3 = stitchSQL_astreetoken_new(3);
+    stitchSQL_pushAstreeNode(token3, &ast);
+
+    Astree_token* token4 = stitchSQL_astreetoken_new(4);
+    stitchSQL_pushAstreeNode(token4, &ast);
+
+    Astree_token* token5 = stitchSQL_astreetoken_new(2);
+    stitchSQL_pushAstreeNode(token5, &ast);
+
+    Astree_token* token6 = stitchSQL_astreetoken_new(3);
+    stitchSQL_pushAstreeNode(token6, &ast);
+
+    assert(ast->childs->childs->childs->childs->token.tokenType == 4);
+    return 0;
+}

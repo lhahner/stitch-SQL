@@ -74,5 +74,20 @@ int test_stitchSQL_popAstreeNode_caseA(void);
  */
 int test_stitchSQL_popAstreeNode_caseB(void);
 
-
+/**
+ * @brief Unit test for stitchSQL_AstreeLength with a specific test case.
+ * 
+ * This function verifies if the correct length of the Astree is returned.
+ * 
+ * @return int Returns 0 of the test passes, non-zero of it fails. 
+ */
 int test_stitchSQL_AstreeLength(void);
+
+/**
+ * @brief Unit test forstitchSQL_pushAstreeNode with a specific test case (Case C).
+ * 
+ * This function 
+ * 
+ * @return int 
+ */
+int test_stitchSQL_pushAstreeNode_caseC(void);

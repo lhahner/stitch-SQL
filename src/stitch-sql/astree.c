@@ -1,7 +1,7 @@
 /**
  * @file astree.c
  * @author Lennart Hahner (lennart.hahner@gmail.com)
- * @brief Contains code to construct a derived version of an Abstract Syntax Tree.
+ * @brief Contains code to construct a derived version of an Abstract Syntax Tree (AST).
  * @version 0.1
  * @date 2025-04-08
  * 
@@ -13,6 +13,10 @@
  *   =====))=))===() 
  */
 #include "includes/astree.h"
+/**
+ * @brief A global counter to count the depth of childs in the ASTree.
+ */
+unsigned int counter = 0;
 
 Astree_token *stitchSQL_astreetoken_new(int token){
     Astree_token *ptr = malloc(sizeof(Astree_token));
@@ -40,7 +44,7 @@ void stitchSQL_pushAstreeNode(Astree_token *token, Astree_node **parent)
     Astree_node *newNode = malloc(sizeof(Astree_node));
     newNode->token = *token;
     newNode->childs = NULL;
-    newNode->tokenCount = ((*parent)->tokenCount);
+    newNode->tokenCount = (*parent)->tokenCount;
     newNode->childCount = 0;
 
     // Root
@@ -123,8 +127,6 @@ void stitchSQL_popAstreeNode(Astree_node **root)
         free((*root));
     }
 }
-
-unsigned int counter = 0;
 
 int stitchSQL_AstreeLength(Astree_node** root){
     if((*root)->childs){
