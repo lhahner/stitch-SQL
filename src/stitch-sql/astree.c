@@ -55,22 +55,21 @@ void stitchSQL_pushAstreeNode(Astree_token token, Astree_node **parent)
     // Lower Hierachy
     else if ((*parent)->token.tokenType < token.tokenType)
     {
-        if ((*(*parent)->childs) == NULL || (*(*parent)->childs)->token.tokenType == token.tokenType)
+        if ((*parent)->child == NULL || (*parent)->child->token.tokenType == token.tokenType)
         {
-            if (((*(*parent)->childs) != NULL))
+            if (((*parent)->child != NULL))
             {
-                (*parent) = stitichSQL_enlargeNodeMem(((*parent)), token.tokenType);
                 return;
             }
             else
             {
-                (*parent)->childs[0] = (Astree_node*)stitchSQL_astree_new(token);
+                (*parent)->child = stitchSQL_astree_new(token);
                 return;
             }
         }
         else
         {
-            stitchSQL_pushAstreeNode(token, &(*parent)->childs[0]);
+            stitchSQL_pushAstreeNode(token, &(*parent)->child);
             return;
         }
     }
@@ -78,7 +77,6 @@ void stitchSQL_pushAstreeNode(Astree_token token, Astree_node **parent)
     {
         if (((*parent) != NULL))
         {
-            *parent = stitichSQL_enlargeNodeMem(*parent, token.tokenType);
             return;
         }
     }
@@ -88,11 +86,11 @@ void stitchSQL_popAstreeNode(Astree_node **root)
 {
     unsigned int tokenCount = stitichSQL_tokenCount(*root);
     assert(root != NULL);
-    if ((*root)->childs)
+    if ((*root)->child)
     {
-        if ((*(*root)->childs)->token.tokenType > (*root)->token.tokenType)
+        if ((*root)->child->token.tokenType > (*root)->token.tokenType)
         {
-            stitchSQL_popAstreeNode(&(*root)->childs);
+            stitchSQL_popAstreeNode(&(*root)->child);
             return;
         }
         else
@@ -100,11 +98,11 @@ void stitchSQL_popAstreeNode(Astree_node **root)
             if ((*root)->childCount > 0)
             {
                 (*root)->childCount--;
-                (*(*root)->childs) = realloc((*root)->childs, sizeof(Astree_node *) * (*root)->childCount);
+                
             }
             else
             {
-                free((*root)->childs);
+                free((*root)->child);
             }
         }
     }
@@ -123,10 +121,10 @@ void stitchSQL_popAstreeNode(Astree_node **root)
 
 int stitchSQL_AstreeLength(Astree_node **root)
 {
-    if ((*root)->childs)
+    if ((*root)->child)
     {
         counter++;
-        counter = stitchSQL_AstreeLength(&(*root)->childs);
+        counter = stitchSQL_AstreeLength(&(*root)->child);
     }
     else
     {
@@ -156,20 +154,6 @@ int stitichSQL_tokenCount(Astree_node *node)
 
 Astree_node *stitichSQL_enlargeNodeMem(Astree_node *node, int token)
 {
-    Astree_node* nodeTmp;
-    node->token.tokenType = token;
-    if((nodeTmp = (Astree_node*)malloc(sizeof(Astree_node*))) != NULL){
-        int i = 0;
-        while(node->childs[i]){
-            i++;
-        }
-        node->childs[i] = nodeTmp;
-        return node;
-    }
-    else {
-        perror( "Out of storage" );
-        abort();
-    }
     return NULL;
 }
 

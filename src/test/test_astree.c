@@ -29,7 +29,7 @@ int test_stitchSQL_pushAstreeNode(void)
 
     Astree_token token5 = stitchSQL_astreetoken_new(5);
     stitchSQL_pushAstreeNode(token5, &ast);
-    int c = ast->childs[0]->token.tokenType;
+    int c = ast->child->token.tokenType;
 
     assert(c == 2);
     return 0;
@@ -72,9 +72,9 @@ int test_stitchSQL_pushAstreeNode_caseB(void)
 
     
     assert(ast->token.tokenType == 1);
-    assert(ast->childs[0]->token.tokenType == 2);
-    assert(ast->childs[0]->childs[0]->token.tokenType == 3);
-    assert(ast->childs[0]->childs[1]->token.tokenType == 3);
+    assert(ast->child->token.tokenType == 2);
+    assert(ast->child->child->token.tokenType == 3);
+    assert(ast->child->child->token.tokenType == 3);
     return 0;
 }
 
@@ -88,14 +88,14 @@ int test_stitchSQL_pushAstreeNode_caseC(void)
     stitchSQL_pushAstreeNode(token1, &ast);
     
     Astree_token token2 = stitchSQL_astreetoken_new(2);
-    stitchSQL_pushAstreeNode(token2, &ast->childs);
+    stitchSQL_pushAstreeNode(token2, &ast->child);
 
     Astree_token token3 = stitchSQL_astreetoken_new(3);
     stitchSQL_pushAstreeNode(token3, &ast);
     
     assert(ast->token.tokenType == 0);
-    assert(ast->childs[0]->childs[0]->token.tokenType == 2);
-    assert(ast->childs[0]->childs[0]->childs[0]->token.tokenType == 3);
+    assert(ast->child->child->token.tokenType == 2);
+    assert(ast->child->child->child->token.tokenType == 3);
 
     return 0;
 }

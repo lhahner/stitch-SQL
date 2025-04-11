@@ -23,7 +23,7 @@ typedef struct Astree_token {
 typedef struct Astree_node {
     Astree_token token;  /**< Token associated with this node */
     // Add any additional fields here (e.g., parent pointer, sibling pointer, etc.)
-    struct Astree_node *childs[MAX_CHILDS];  /**< Pointer to the list of child nodes */
+    struct Astree_node *child;  /**< Pointer to the list of child nodes */
     int childCount;   /**< Number of children of this node */
 } Astree_node;
 
