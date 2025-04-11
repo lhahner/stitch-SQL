@@ -1,1 +1,0 @@
-/usr/bin/cc -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names "CMakeFiles/tok.dir/src/stitch-sql/stitch-sql.c.o" "CMakeFiles/tok.dir/src/stitch-sql/tokenizer.c.o" "CMakeFiles/tok.dir/src/stitch-sql/astree.c.o" CMakeFiles/tok.dir/src/test/test_tokenizer.c.o CMakeFiles/tok.dir/src/test/test_astree.c.o -o tok

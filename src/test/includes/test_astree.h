@@ -23,7 +23,6 @@
  * @return int Returns 0 on success, or a nonzero value if the test fails.
  */
 int test_stitchSQL_pushAstreeNode(void);
-
 /**
  * @brief Tests the functionality of popping a node from the AST stack.
  * 
@@ -33,7 +32,6 @@ int test_stitchSQL_pushAstreeNode(void);
  * @return int Returns 0 on success, or a nonzero value if the test fails.
  */
 int test_stitchSQL_popAstreeNode(void);
-
 /**
  * @brief Unit test for stitchSQL_astreetoken_new function.
  * 
@@ -43,7 +41,6 @@ int test_stitchSQL_popAstreeNode(void);
  * @return int Returns 0 if the test passes, non-zero if it fails.
  */
 int test_stitchSQL_astreetoken_new(void);
-
 /**
  * @brief Unit test for stitchSQL_pushAstreeNode with a specific test case (Case A).
  * 
@@ -53,7 +50,6 @@ int test_stitchSQL_astreetoken_new(void);
  * @return int Returns 0 if the test passes, non-zero if it fails.
  */
 int test_stitchSQL_pushAStreeNode_caseA(void);
-
 /**
  * @brief Unit test for stitchSQL_popAstreeNode with a specific test case (Case A).
  * 
@@ -63,7 +59,6 @@ int test_stitchSQL_pushAStreeNode_caseA(void);
  * @return int Returns 0 if the test passes, non-zero if it fails.
  */
 int test_stitchSQL_popAstreeNode_caseA(void);
-
 /**
  * @brief Unit test for stitchSQL_popAstreeNode_caseB with a specific test case (Case A).
  * 
@@ -73,21 +68,34 @@ int test_stitchSQL_popAstreeNode_caseA(void);
  * @return int Returns 0 if the test passes, non-zero if it fails.
  */
 int test_stitchSQL_popAstreeNode_caseB(void);
-
 /**
  * @brief Unit test for stitchSQL_AstreeLength with a specific test case.
  * 
  * This function verifies if the correct length of the Astree is returned.
  * 
- * @return int Returns 0 of the test passes, non-zero of it fails. 
+ * @return int Returns 0 of the test passes, non-zero if it fails. 
  */
 int test_stitchSQL_AstreeLength(void);
-
 /**
- * @brief Unit test forstitchSQL_pushAstreeNode with a specific test case (Case C).
+ * @brief Unit test for stitchSQL_pushAstreeNode with a specific test case (Case C).
  * 
  * This function 
  * 
- * @return int 
+ * @return int Returns 0 if the test passes, non-zero if it fails
+ */
+int test_stitchSQL_pushAstreeNode_caseB(void);
+/**
+ * @brief Unit test for stitchSQL_pushAstreeNode with a specific test case (Case C).
+ * 
+ * This function 
+ * 
+ * @return int Returns 0 if the test passes, non-zero if it fails
  */
 int test_stitchSQL_pushAstreeNode_caseC(void);
+/**
+ * @brief Unit test for stitichSQL_tokenCount to test if the number of items
+ * in one node is returned correctly.
+ * 
+ * @return int Returns 0 if the test passes, non-zero if its fails;
+ */
+int test_stitichSQL_tokenCount(void);
