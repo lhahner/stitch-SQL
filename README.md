@@ -1,7 +1,7 @@
 # sitich-SQL
 ## Contents
 * 1. [Version `0.1.0`](#Version0.1.0)
-* 2. [Folder structure](#Folderstructure)
+* 2. [Folder structure](#Folderstructure) 
 * 3. [`stitich-sql` bash script](#stitich-sqlbashscript)
 	* 3.1. [Options](#Options)
 	* 3.2. [Examples](#Examples)
