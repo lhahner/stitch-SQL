@@ -20,7 +20,7 @@ complete source-code or make semi-structured data dynamically build.
 | `/bins`   | The constructed files it can be of any type.            |
 
 ###  1.2. <a name='stitich-sqlbashscript'></a>`stitich-sql` bash script
-This script shall be used to combine different types of code into one big 
+This script shall be used to combine different types of code into one big  
 sql file.
 
 ####  1.2.1. <a name='Options'></a>Options
