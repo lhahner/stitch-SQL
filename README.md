@@ -11,7 +11,7 @@
 ##  1. <a name='Version0.1.0'></a>Version `0.1.0`
 Basic utility scripts to combine different strings out of different files to build  a 
 complete source-code or make semi-structured data dynamically build.  
-
+ 
 ###  1.1. <a name='Folderstructure'></a>Folder structure
 
 | Directory | Description                                             |
