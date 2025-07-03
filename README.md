@@ -7,7 +7,7 @@
 	* 3.2. [Examples](#Examples)
 * 4. [Version `1.0.0`](#Version1.0.0)
 	* 4.1. [Ideas](#Ideas)
-
+ 
 ##  1. <a name='Version0.1.0'></a>Version `0.1.0`
 Basic utility scripts to combine different strings out of different files to build  a 
 complete source-code or make semi-structured data dynamically build.  
